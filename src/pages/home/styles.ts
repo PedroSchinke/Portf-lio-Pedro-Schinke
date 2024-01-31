@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import HomeImage from '../../assets/home-image.jpg'
-import ContentBackground from '../../assets/content-background.jpg'
-import ProjectBackground from '../../assets/Cópiadeprojectbg.jpg'
+import HomeImage from '../../assets/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg'
 
 export const HeroContainer = styled.div`
   height: 100vh;
@@ -18,16 +16,8 @@ export const HeroContainer = styled.div`
 
   h1 {
     font-family: 'Oswald', sans-serif;
-    color: #fff;
+    color: aliceblue;
     font-size: 60px;
-  }
-
-  li:hover {
-    color: #d870db;
-  }
-
-  .content-container {
-    height: 100vh;
   }
 `
 export const Header = styled.header`
@@ -36,10 +26,11 @@ export const Header = styled.header`
   }
 
   ul {
+    margin-top: 10px;
+    width: 700px;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 700px;
   }
 
   li {
@@ -47,6 +38,10 @@ export const Header = styled.header`
     font-size: 21px;
     color: #fff;
     cursor: pointer;
+
+    &:hover {
+      color: #9026ff;
+    }
   }
 `
 
@@ -109,157 +104,22 @@ export const Arrows = styled.svg`
   }
 `
 
-export const ContentContainer = styled.div`
-  height: 100vh;
+interface TipoProps {
+  tipo: 'maior' | 'normal'
+}
+
+export const ContentContainer = styled.div<TipoProps>`
   background-color: #333;
-`
 
-export const ProfileContainer = styled.div`
-  color: #333;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(${ContentBackground});
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  ${({ tipo }) =>
+    tipo === 'maior' &&
+    `
+    height: fit-content;
+  `}
 
-  .profile-content {
-    width: 30%;
-
-    .profile-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 350px;
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-
-      .profile-image {
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        border: 4px solid #d870db;
-      }
-
-      .name-text {
-        font-family: 'Oswald', sans-serif;
-        font-size: 21px;
-        margin-top: 15px;
-      }
-
-      .profile-text {
-        font-family: 'Oswald', sans-serif;
-        font-size: 17px;
-        text-align: center;
-        width: 80%;
-        margin-top: 10px;
-      }
-
-      .profile-button {
-        width: 150px;
-        height: 50px;
-        border-radius: 15px;
-        border: none;
-        background-color: #d870db;
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-        margin-top: 35px;
-        cursor: pointer;
-      }
-
-      .divider {
-        width: 100%;
-        border-top: 0.5px solid #bfbfbf;
-        margin: 20px 0;
-      }
-
-      .icons-container {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        gap: 8px;
-
-        .icon-item {
-          width: 65px;
-          height: auto;
-        }
-      }
-    }
-  }
-`
-
-export const ProfileSinopse = styled.p`
-  width: 430px;
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  font-size: 17px;
-`
-
-export const ProjectContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(${ProjectBackground});
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .project-content {
-    width: 75%;
-    height: 80%;
-    display: grid;
-    grid-template-rows: repeat(1fr, 3);
-
-    .position-container {
-      width: 100%;
-      display: flex;
-
-      .project-card {
-        width: 700px;
-        height: 200px;
-        background-color: black;
-        box-shadow: 10px 10px 5px black;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-
-        .card-reverse {
-          flex-direction: row-reverse;
-        }
-
-        .project-image {
-          width: 350px;
-          height: auto;
-          position: relative;
-          border-radius: 8px;
-          right: 20px;
-          top: 40px;
-
-          .image-reverse {
-            left: 20px;
-          }
-        }
-
-        .project-text {
-          color: white;
-          font-family: 'Oswald', sans-serif;
-        }
-      }
-    }
-
-    .right {
-      justify-content: flex-end;
-    }
-
-    .left {
-      justify-content: flex-start;
-    }
-  }
+  ${({ tipo }) =>
+    tipo === 'normal' &&
+    `
+    height: 100vh;
+  `}
 `
