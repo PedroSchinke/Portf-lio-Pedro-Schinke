@@ -19,7 +19,7 @@ export const ProjectContainer = styled.div`
     height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 
     .position-container {
       width: 100%;
@@ -43,11 +43,11 @@ export const ProjectCard = styled.div`
   align-items: center;
   gap: 10px;
   padding: 15px 20px;
-  background-color: #fff;
+  background-color: #ebebeb;
   border-radius: 8px;
 
   .project-image {
-    width: 400px;
+    width: 60%;
     height: auto;
     border-radius: 8px;
   }
@@ -56,7 +56,7 @@ export const ProjectCard = styled.div`
     color: #333;
     font-family: 'Oswald', sans-serif;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
     gap: 10px;
 
     #softwares {

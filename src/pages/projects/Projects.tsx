@@ -22,7 +22,11 @@ export function Projects() {
               <strong>Date-fns</strong> e <strong>Toastify</strong>.
               <p className="link_to_github">
                 Mais detalhes em:{' '}
-                <a href="https://github.com/PedroSchinke/Coffee-Delivery">
+                <a
+                  href="https://github.com/PedroSchinke/Coffee-Delivery"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://github.com/PedroSchinke/Coffee-Delivery
                 </a>
               </p>
@@ -52,7 +56,11 @@ export function Projects() {
               padronização do código.
               <p className="link_to_github">
                 Mais detalhes em:{' '}
-                <a href="https://github.com/PedroSchinke/Daily-Diet">
+                <a
+                  href="https://github.com/PedroSchinke/Daily-Diet"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://github.com/PedroSchinke/Daily-Diet
                 </a>
               </p>
@@ -80,8 +88,44 @@ export function Projects() {
               a manipulação de datas e horários.
               <p className="link_to_github">
                 Mais detalhes em:{' '}
-                <a href="https://github.com/PedroSchinke/Gympass">
+                <a
+                  href="https://github.com/PedroSchinke/Gympass"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://github.com/PedroSchinke/Gympass
+                </a>
+              </p>
+            </p>
+          </ProjectCard>
+        </div>
+
+        <div className="position-container left">
+          <ProjectCard>
+            <p className="project-text">
+              <h2>Controle de Pagamentos</h2>
+              <p id="softwares">React.js + TypeScript</p>
+              Projeto Front-End desenvolvido por mim para uma aplicação
+              Full-Stack para a empresa ****. Projeto voltado para o registro e
+              busca dos pagamentos realizados pela empresa, além de um dashboard
+              com as métricas dos faturamentos por cliente e por atividades,
+              podendo selecionar períodos de tempo distintos. Cada pagamento é
+              vinculado a um cliente e uma atividade, ambos dinâmicos, sendo
+              registrados, editados e excluídos pelo próprio usuário. Nesse
+              projeto pude desenvolver minhas habilidades em{' '}
+              <strong>ApexCharts</strong> para a construção do gráfico de
+              faturamento, <strong>Axios</strong> para a integração com o
+              Back-End e <strong>React Input Mask</strong> com{' '}
+              <strong>React Number Format</strong> para as máscaras de input e
+              formatação de números.
+              <p className="link_to_github">
+                Mais detalhes em:{' '}
+                <a
+                  href="https://github.com/PedroSchinke/Controle-de-Pagamentos"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://github.com/PedroSchinke/Controle-de-Pagamentos
                 </a>
               </p>
             </p>
