@@ -2,18 +2,28 @@ import { Arrows, ContentContainer, Header, HeroContainer } from './styles'
 import { Profile } from '../Profile/Profile'
 import { Projects } from '../projects/Projects'
 import { Contact } from '../contact/Contact'
+import { RefObject, useRef } from 'react'
 
 export function Home() {
+  const apresentacaoRef = useRef(null)
+  const projetosRef = useRef(null)
+  const contatoRef = useRef(null)
+
+  const scrollToSection = (ref: RefObject<HTMLDivElement>) => {
+    ref.current!.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <HeroContainer>
         <Header>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Apresentação</li>
-              <li>Projetos</li>
-              <li>Contato</li>
+              <li onClick={() => scrollToSection(apresentacaoRef)}>
+                Apresentação
+              </li>
+              <li onClick={() => scrollToSection(projetosRef)}>Projetos</li>
+              <li onClick={() => scrollToSection(contatoRef)}>Contato</li>
             </ul>
           </nav>
         </Header>
@@ -25,15 +35,15 @@ export function Home() {
         </Arrows>
       </HeroContainer>
 
-      <ContentContainer tipo="normal">
+      <ContentContainer tipo="normal" ref={apresentacaoRef}>
         <Profile />
       </ContentContainer>
 
-      <ContentContainer tipo="maior">
+      <ContentContainer tipo="maior" ref={projetosRef}>
         <Projects />
       </ContentContainer>
 
-      <ContentContainer tipo="normal">
+      <ContentContainer tipo="normal" ref={contatoRef}>
         <Contact />
       </ContentContainer>
     </>
