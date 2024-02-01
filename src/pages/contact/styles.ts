@@ -22,7 +22,7 @@ export const FormContainer = styled.div`
     justify-content: center;
     border-radius: 8px;
     padding: 20px;
-    background-color: white;
+    background-color: #ebebeb;
     gap: 10px;
 
     div {
@@ -63,6 +63,7 @@ export const FormContainer = styled.div`
     }
 
     button {
+      margin-top: 10px;
       width: 15%;
       display: flex;
       align-items: center;
@@ -78,7 +79,7 @@ export const FormContainer = styled.div`
       transition: 0.2s;
 
       &:hover {
-        background-color: #741fcf;
+        opacity: 0.5;
       }
     }
   }

@@ -38,6 +38,7 @@ export const Header = styled.header`
     font-size: 21px;
     color: #fff;
     cursor: pointer;
+    transition: 0.2s;
 
     &:hover {
       color: #9026ff;
