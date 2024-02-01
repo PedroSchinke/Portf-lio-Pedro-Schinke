@@ -21,7 +21,7 @@ export const ProfileContainer = styled.div`
       flex-direction: column;
       align-items: center;
       width: 350px;
-      background: #fff;
+      background: #ebebeb;
       padding: 30px;
       border-radius: 8px;
 
@@ -46,18 +46,6 @@ export const ProfileContainer = styled.div`
         margin-top: 10px;
       }
 
-      .profile-button {
-        width: 150px;
-        height: 50px;
-        border-radius: 15px;
-        border: none;
-        background-color: #9026ff;
-        color: #fff;
-        font-family: 'Oswald', sans-serif;
-        margin-top: 35px;
-        cursor: pointer;
-      }
-
       .divider {
         width: 100%;
         border-top: 0.5px solid #bfbfbf;
@@ -80,6 +68,46 @@ export const ProfileContainer = styled.div`
         }
       }
     }
+  }
+`
+
+export const ProfileButton = styled.button`
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 15px;
+  border: none;
+  background-color: #9026ff;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  ${({ color }) =>
+    color === 'green' &&
+    `
+      background-color: #04D960;
+    `}
+
+  ${({ color }) =>
+    color === 'blue' &&
+    `
+      background-color: #007BB6;
+    `}
+
+  ${({ color }) =>
+    color === 'grey' &&
+    `
+      background-color: #8D9088;
+    `}
+
+  &:hover {
+    opacity: 0.5;
   }
 `
 
