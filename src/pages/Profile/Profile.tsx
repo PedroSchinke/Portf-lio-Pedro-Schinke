@@ -1,5 +1,5 @@
 import { ProfileButton, ProfileContainer, ProfileSinopse } from './styles'
-import ProfileImage from '../../assets/profile_image.jpg'
+import ProfileImage from '../../assets/IMG_3125.jpg'
 import HTML from '../../assets/HTML5_logo_and_wordmark.svg.png'
 import CSS from '../../assets/logo-css-3-2048.png'
 import TS from '../../assets/ts.png'
@@ -16,36 +16,38 @@ export function Profile() {
           <img className="profile-image" src={ProfileImage} alt="" />
           <span className="name-text">Pedro Schinke</span>
           <span className="profile-text">Desenvolvedor Full Stack</span>
-          <a
-            href="https://wa.me/+5551983145592"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ProfileButton color="green">
-              <WhatsappLogo size={26} />
-              WhatsApp
-            </ProfileButton>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/pedro-schinke-17b866223/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ProfileButton color="blue">
-              <LinkedinLogo size={26} />
-              LinkedIn
-            </ProfileButton>
-          </a>
-          <a
-            href="https://github.com/PedroSchinke"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ProfileButton color="grey">
-              <GithubLogo size={26} />
-              GitHub
-            </ProfileButton>
-          </a>
+          <div className="social_media_container">
+            <a
+              href="https://wa.me/+5551983145592"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProfileButton color="green">
+                <WhatsappLogo size={26} />
+                WhatsApp
+              </ProfileButton>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pedro-schinke-17b866223/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProfileButton color="blue">
+                <LinkedinLogo size={26} />
+                LinkedIn
+              </ProfileButton>
+            </a>
+            <a
+              href="https://github.com/PedroSchinke"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ProfileButton color="grey">
+                <GithubLogo size={26} />
+                GitHub
+              </ProfileButton>
+            </a>
+          </div>
 
           <div className="divider"></div>
           <div className="icons-container">

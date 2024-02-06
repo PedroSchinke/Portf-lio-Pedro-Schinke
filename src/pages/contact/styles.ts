@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import FormBackground from '../../assets/altumcode-dMUt0X3f59Q-unsplash.jpg'
+import FormBackground from '../../assets/altumcode-gbcQSP1nAGA-unsplash.jpg'
 
 export const FormContainer = styled.div`
   position: relative;
@@ -26,6 +26,10 @@ export const FormContainer = styled.div`
     padding: 20px;
     background-color: #ebebeb;
     gap: 10px;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
 
     div {
       width: 100%;
@@ -83,6 +87,10 @@ export const FormContainer = styled.div`
       &:hover {
         opacity: 0.5;
       }
+
+      @media (max-width: 768px) {
+        width: 20%;
+      }
     }
   }
 
@@ -91,14 +99,20 @@ export const FormContainer = styled.div`
     bottom: 30px;
     font-size: 1.2rem;
     color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   }
 `
 
 export const FormMessage = styled.p`
   display: flex;
-  background-color: rgba(5, 50, 50, 0.7);
   color: #fff;
   border-radius: 8px;
   padding: 20px;
   font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `

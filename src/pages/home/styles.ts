@@ -18,16 +18,26 @@ export const HeroContainer = styled.div`
     font-family: 'Oswald', sans-serif;
     color: aliceblue;
     font-size: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
   }
 `
 export const Header = styled.header`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
   nav {
     width: 50%;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   ul {
     margin-top: 10px;
-    width: 700px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     list-style: none;

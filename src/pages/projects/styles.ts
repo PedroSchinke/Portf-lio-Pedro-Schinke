@@ -21,6 +21,10 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
     gap: 40px;
 
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
     .position-container {
       width: 100%;
       display: flex;
@@ -28,10 +32,18 @@ export const ProjectContainer = styled.div`
 
     .right {
       justify-content: flex-end;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
     }
 
     .left {
       justify-content: flex-start;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
     }
   }
 `
@@ -46,10 +58,19 @@ export const ProjectCard = styled.div`
   background-color: #ebebeb;
   border-radius: 8px;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
   .project-image {
     width: 60%;
     height: auto;
     border-radius: 8px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .project-text {
@@ -67,6 +88,10 @@ export const ProjectCard = styled.div`
 
     .link_to_github {
       margin-top: 8px;
+
+      @media (max-width: 768px) {
+        text-align: left;
+      }
     }
   }
 
