@@ -100,7 +100,7 @@ export function Projects() {
           </ProjectCard>
         </div>
 
-        <div className="position-container left">
+        {/* <div className="position-container left">
           <ProjectCard>
             <p className="project-text">
               <h2>Controle de Pagamentos</h2>
@@ -130,7 +130,7 @@ export function Projects() {
               </p>
             </p>
           </ProjectCard>
-        </div>
+        </div> */}
       </div>
     </ProjectContainer>
   )
