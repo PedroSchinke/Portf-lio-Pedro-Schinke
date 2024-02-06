@@ -34,16 +34,16 @@ export const ProfileContainer = styled.div`
 
       .name-text {
         font-family: 'Oswald', sans-serif;
-        font-size: 21px;
+        font-size: 23px;
         margin-top: 15px;
       }
 
       .profile-text {
+        margin-bottom: 10px;
+        width: 80%;
         font-family: 'Oswald', sans-serif;
         font-size: 17px;
         text-align: center;
-        width: 80%;
-        margin-top: 10px;
       }
 
       .divider {

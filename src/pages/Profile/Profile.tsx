@@ -15,10 +15,7 @@ export function Profile() {
         <div className="profile-card">
           <img className="profile-image" src={ProfileImage} alt="" />
           <span className="name-text">Pedro Schinke</span>
-          <span className="profile-text">
-            Foco, disciplica e consistência. Vamos revolucionar o mercado de
-            tecnologia juntos?
-          </span>
+          <span className="profile-text">Desenvolvedor Full Stack</span>
           <a
             href="https://wa.me/+5551983145592"
             target="_blank"
@@ -63,11 +60,12 @@ export function Profile() {
       </div>
       <ProfileSinopse>
         Desenvolvedor apaixonado pelo constante processo de aprendizado da
-        profissão. Hoje sou especializado em HTML, CSS, JavaScript, TypeScript,
-        React.js e Node.js, além de outras tecnologias. Procuro uma empresa onde
-        possa crescer e desenvolver minhas habilidades técnicas e profissionais.
-        Acima de tudo, é meu objetivo agregar ao ambiente de trabalho:
-        qualidade, trabalho em equipe, experiência e ética.
+        profissão. Estudante de Sistemas de Informação na Unisinos, sou
+        especializado em HTML, CSS, JavaScript, TypeScript, React.js e Node.js,
+        além de outras tecnologias. Procuro trabalhar em uma empresa onde possa
+        crescer e desenvolver minhas habilidades técnicas e profissionais. Acima
+        de tudo, é meu objetivo agregar ao ambiente de trabalho: qualidade,
+        trabalho em equipe, experiência e ética.
       </ProfileSinopse>
     </ProfileContainer>
   )
