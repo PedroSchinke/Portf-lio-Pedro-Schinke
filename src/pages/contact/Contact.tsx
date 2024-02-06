@@ -44,8 +44,11 @@ export function Contact() {
   }
 
   return (
-    <FormContainer>
-      <ContactForm />
-    </FormContainer>
+    <>
+      <FormContainer>
+        <ContactForm />
+        <footer>Desenvolvido por Pedro Schinke</footer>
+      </FormContainer>
+    </>
   )
 }

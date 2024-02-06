@@ -2,10 +2,12 @@ import styled from 'styled-components'
 import FormBackground from '../../assets/altumcode-dMUt0X3f59Q-unsplash.jpg'
 
 export const FormContainer = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   font-family: 'Oswald', sans-serif;
   background-image: url(${FormBackground});
@@ -83,12 +85,20 @@ export const FormContainer = styled.div`
       }
     }
   }
+
+  footer {
+    position: absolute;
+    bottom: 30px;
+    font-size: 1.2rem;
+    color: white;
+  }
 `
 
 export const FormMessage = styled.p`
   display: flex;
-  background-color: #fff;
+  background-color: rgba(5, 50, 50, 0.7);
+  color: #fff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
   font-size: 1.5rem;
 `
