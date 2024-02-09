@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ProjectBackground from '../../assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg'
+import ProjectBackground from '../../assets/computer-1869236_1280.jpg'
 
 export const ProjectContainer = styled.div`
   width: 100%;

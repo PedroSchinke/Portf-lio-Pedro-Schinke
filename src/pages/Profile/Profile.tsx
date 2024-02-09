@@ -1,14 +1,14 @@
 import { ProfileButton, ProfileContainer, ProfileSinopse } from './styles'
-import ProfileImage from '../../assets/IMG_3125.jpg'
-import HTML from '../../assets/HTML5_logo_and_wordmark.svg.png'
-import CSS from '../../assets/logo-css-3-2048.png'
-import TS from '../../assets/ts.png'
+import ProfileImage from '../../assets/IMG_3125.webp'
+import HTML from '../../assets/HTML5_logo_and_wordmark.svg.webp'
+import CSS from '../../assets/logo-css-3-2048.webp'
+import TS from '../../assets/Typescript_logo_2020.svg.webp'
 import JS from '../../assets/js.png'
-import React from '../../assets/reactjs.png'
-import Node from '../../assets/nodejs.png'
+import React from '../../assets/reactjs.webp'
+import Node from '../../assets/nodejs.webp'
 import { WhatsappLogo, GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 
-export function Profile() {
+function Profile() {
   return (
     <ProfileContainer>
       <div className="profile-content">
@@ -72,3 +72,5 @@ export function Profile() {
     </ProfileContainer>
   )
 }
+
+export default Profile

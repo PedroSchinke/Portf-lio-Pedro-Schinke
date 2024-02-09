@@ -1,8 +1,12 @@
 import { Arrows, ContentContainer, Header, HeroContainer } from './styles'
-import { Profile } from '../Profile/Profile'
-import { Projects } from '../projects/Projects'
-import { Contact } from '../contact/Contact'
-import { RefObject, useRef } from 'react'
+// import { Profile } from '../Profile/Profile'
+// import { Projects } from '../projects/Projects'
+// import { Contact } from '../contact/Contact'
+import { RefObject, useRef, Suspense, lazy } from 'react'
+
+const Profile = lazy(() => import('../Profile/Profile'))
+const Projects = lazy(() => import('../projects/Projects'))
+const Contact = lazy(() => import('../contact/Contact'))
 
 export function Home() {
   const apresentacaoRef = useRef(null)
@@ -36,15 +40,21 @@ export function Home() {
       </HeroContainer>
 
       <ContentContainer tipo="normal" ref={apresentacaoRef}>
-        <Profile />
+        <Suspense>
+          <Profile />
+        </Suspense>
       </ContentContainer>
 
       <ContentContainer tipo="maior" ref={projetosRef}>
-        <Projects />
+        <Suspense>
+          <Projects />
+        </Suspense>
       </ContentContainer>
 
       <ContentContainer tipo="normal" ref={contatoRef}>
-        <Contact />
+        <Suspense>
+          <Contact />
+        </Suspense>
       </ContentContainer>
     </>
   )

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ProfileBackground from '../../assets/anas-alshanti-feXpdV001o4-unsplash.jpg'
+import ProfileBackground from '../../assets/pexels-pavel-danilyuk-5496464.jpg'
 
 export const ProfileContainer = styled.div`
   color: #222;
@@ -149,8 +149,9 @@ export const ProfileButton = styled.button`
 export const ProfileSinopse = styled.p`
   width: 430px;
   font-family: 'Oswald', sans-serif;
-  color: #fff;
+  color: #ebebeb;
   font-size: 1.5rem;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
 
   @media (max-width: 768px) {
     width: 85%;

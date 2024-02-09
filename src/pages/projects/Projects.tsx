@@ -1,7 +1,7 @@
 import { ProjectCard, ProjectContainer } from './styles'
 import CoffeeDeliveryGIF from '../../assets/demonstration.gif'
 
-export function Projects() {
+function Projects() {
   return (
     <ProjectContainer>
       <div className="project-content">
@@ -135,3 +135,5 @@ export function Projects() {
     </ProjectContainer>
   )
 }
+
+export default Projects

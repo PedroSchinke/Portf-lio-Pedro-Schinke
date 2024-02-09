@@ -1,7 +1,7 @@
 import { ValidationError, useForm } from '@formspree/react'
 import { FormContainer, FormMessage } from './styles'
 
-export function Contact() {
+function Contact() {
   function ContactForm() {
     const [state, handleSubmit] = useForm('mayrqgzn')
 
@@ -52,3 +52,5 @@ export function Contact() {
     </>
   )
 }
+
+export default Contact

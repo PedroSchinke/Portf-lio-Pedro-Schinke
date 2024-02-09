@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import FormBackground from '../../assets/altumcode-gbcQSP1nAGA-unsplash.jpg'
+import FormBackground from '../../assets/altumcode-gbcQSP1nAGA-unsplash.webp'
 
 export const FormContainer = styled.div`
   position: relative;

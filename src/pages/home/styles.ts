@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import HomeImage from '../../assets/mohammad-rahmani-_Fx34KeqIEw-unsplash.jpg'
+import HomeImage from '../../assets/pexels-neo-2653362.jpg'
 
 export const HeroContainer = styled.div`
   height: 100vh;
@@ -47,6 +47,7 @@ export const Header = styled.header`
     font-family: 'Oswald', sans-serif;
     font-size: 21px;
     color: #fff;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     transition: 0.2s;
 
