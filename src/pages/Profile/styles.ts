@@ -50,7 +50,7 @@ export const ProfileContainer = styled.div`
         border: 4px solid #9026ff;
 
         @media (max-width: 768px) {
-          width: 100px;
+          width: 80px;
         }
       }
 
@@ -58,6 +58,10 @@ export const ProfileContainer = styled.div`
         font-family: 'Oswald', sans-serif;
         font-size: 23px;
         margin-top: 15px;
+
+        @media (max-width: 768px) {
+          margin-top: 5px;
+        }
       }
 
       .profile-text {
@@ -71,12 +75,27 @@ export const ProfileContainer = styled.div`
       .social_media_container {
         display: flex;
         flex-direction: column;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+          gap: 5px;
+        }
+
+        a {
+          width: fit-content;
+          height: fit-content;
+        }
       }
 
       .divider {
         width: 100%;
         border-top: 0.5px solid #bfbfbf;
         margin: 20px 0;
+
+        @media (max-width: 768px) {
+          width: 90%;
+          margin: 13px 0;
+        }
       }
 
       .icons-container {
@@ -90,7 +109,8 @@ export const ProfileContainer = styled.div`
         gap: 15px;
 
         @media (max-width: 768px) {
-          width: 90%;
+          width: 80%;
+          gap: 10px;
         }
 
         .icon-item {
@@ -98,7 +118,7 @@ export const ProfileContainer = styled.div`
           height: auto;
 
           @media (max-width: 768px) {
-            width: 40px;
+            width: 30px;
           }
         }
       }
@@ -119,7 +139,6 @@ export const ProfileButton = styled.button`
   color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
-  margin-top: 10px;
   cursor: pointer;
   transition: 0.2s;
 
@@ -157,5 +176,6 @@ export const ProfileSinopse = styled.p`
     width: 85%;
     font-size: 1.2rem;
     text-align: justify;
+    line-height: 1.5rem;
   }
 `
