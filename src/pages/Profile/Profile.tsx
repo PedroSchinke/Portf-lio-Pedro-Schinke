@@ -26,7 +26,7 @@ function Profile() {
               rel="noreferrer"
             >
               <ProfileButton color="green">
-                <WhatsappLogo size={26} />
+                <WhatsappLogo size={26} className="icon" />
                 WhatsApp
               </ProfileButton>
             </a>
@@ -36,7 +36,7 @@ function Profile() {
               rel="noreferrer"
             >
               <ProfileButton color="blue">
-                <LinkedinLogo size={26} />
+                <LinkedinLogo size={26} className="icon" />
                 LinkedIn
               </ProfileButton>
             </a>
@@ -46,7 +46,7 @@ function Profile() {
               rel="noreferrer"
             >
               <ProfileButton color="grey">
-                <GithubLogo size={26} />
+                <GithubLogo size={26} className="icon" />
                 GitHub
               </ProfileButton>
             </a>
