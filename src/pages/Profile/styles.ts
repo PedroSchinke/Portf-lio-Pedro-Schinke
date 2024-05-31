@@ -24,8 +24,12 @@ export const ProfileContainer = styled.div`
     display: flex;
     justify-content: center;
 
-    @media (max-width: 768px) {
-      width: 90%;
+    @media (max-width: 950px) {
+      width: 40%;
+    }
+
+    @media (max-width: 600px) {
+      width: 60%;
     }
 
     .profile-card {
@@ -43,33 +47,67 @@ export const ProfileContainer = styled.div`
         padding: 20px;
       }
 
+      @media (max-width: 600px) {
+        width: fit-content;
+        padding: 20px 30px;
+      }
+
+      @media (max-height: 700px) {
+        width: fit-content;
+        padding: 10px 20px;
+      }
+
       .profile-image {
         width: 150px;
         height: auto;
         border-radius: 50%;
         border: 4px solid #9026ff;
 
-        @media (max-width: 768px) {
-          width: 80px;
+        @media (max-height: 900px) {
+          width: 90px;
+        }
+
+        @media (max-height: 800px) {
+          width: 70px;
         }
       }
 
       .name-text {
         font-family: 'Oswald', sans-serif;
-        font-size: 23px;
+        font-size: 1.4rem;
         margin-top: 15px;
 
-        @media (max-width: 768px) {
+        @media (max-height: 900px) {
           margin-top: 5px;
+          font-size: 1.3rem;
+        }
+
+        @media (max-height: 700px) {
+          margin-top: 0;
+          font-size: 1.1rem;
         }
       }
 
       .profile-text {
         margin-bottom: 10px;
         width: 80%;
+        display: flex;
+        justify-content: center;
         font-family: 'Oswald', sans-serif;
         font-size: 17px;
         text-align: center;
+        white-space: nowrap;
+
+        @media (max-height: 900px) {
+          margin-bottom: 15px;
+          font-size: 1.2rem;
+        }
+
+        @media (max-height: 700px) {
+          margin-bottom: 5px;
+          margin-top: -5px;
+          font-size: 0.8rem;
+        }
       }
 
       .social_media_container {
@@ -96,6 +134,10 @@ export const ProfileContainer = styled.div`
           width: 90%;
           margin: 13px 0;
         }
+
+        @media (max-height: 700px) {
+          margin: 8px 0;
+        }
       }
 
       .icons-container {
@@ -120,6 +162,10 @@ export const ProfileContainer = styled.div`
           @media (max-width: 768px) {
             width: 30px;
           }
+
+          @media (max-width: 600px) {
+            width: 20px;
+          }
         }
       }
     }
@@ -142,6 +188,12 @@ export const ProfileButton = styled.button`
   cursor: pointer;
   transition: 0.2s;
 
+  .icon {
+    @media (max-width: 600px) {
+      width: 20px;
+    }
+  }
+
   ${({ color }) =>
     color === 'green' &&
     `
@@ -163,6 +215,17 @@ export const ProfileButton = styled.button`
   &:hover {
     opacity: 0.5;
   }
+
+  @media (max-height: 900px) {
+    height: 31px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-height: 700px) {
+    width: 130px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
 `
 
 export const ProfileSinopse = styled.p`
@@ -172,10 +235,22 @@ export const ProfileSinopse = styled.p`
   font-size: 1.5rem;
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
 
+  @media (max-height: 1020px) {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-height: 700px) {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  @media (max-width: 950px) {
+    width: 40%;
+  }
+
   @media (max-width: 768px) {
     width: 85%;
-    font-size: 1.2rem;
     text-align: justify;
-    line-height: 1.5rem;
   }
 `
