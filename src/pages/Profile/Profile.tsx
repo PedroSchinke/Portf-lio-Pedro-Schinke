@@ -6,6 +6,9 @@ import TS from '../../assets/Typescript_logo_2020.svg.webp'
 import JS from '../../assets/js.png'
 import React from '../../assets/reactjs.webp'
 import Node from '../../assets/nodejs.webp'
+import Java from '../../assets/java.webp'
+import Python from '../../assets/python.png'
+import SQL from '../../assets/sql.png'
 import { WhatsappLogo, GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 function Profile() {
@@ -57,17 +60,20 @@ function Profile() {
             <img className="icon-item" src={TS} alt="" title="TypeScript" />
             <img className="icon-item" src={Node} alt="" title="Node.js" />
             <img className="icon-item" src={React} alt="" title="React.js" />
+            <img className="icon-item" src={Java} alt="" title="Java" />
+            <img className="icon-item" src={Python} alt="" title="Python" />
+            <img className="icon-item" src={SQL} alt="" title="SQL" />
           </div>
         </div>
       </div>
       <ProfileSinopse>
         Desenvolvedor apaixonado pelo constante processo de aprendizado da
         profissão. Estudante de Sistemas de Informação na Unisinos, sou
-        especializado em HTML, CSS, JavaScript, TypeScript, React.js e Node.js,
-        além de outras tecnologias. Procuro trabalhar em uma empresa onde possa
-        crescer e desenvolver minhas habilidades técnicas e profissionais. Acima
-        de tudo, é meu objetivo agregar ao ambiente de trabalho: qualidade,
-        trabalho em equipe, experiência e ética.
+        especializado em HTML, CSS, JavaScript, TypeScript, React.js, Java,
+        Python, Node.js e SQL, além de outras tecnologias. Procuro trabalhar em
+        uma empresa onde possa crescer e desenvolver minhas habilidades técnicas
+        e profissionais. Acima de tudo, é meu objetivo agregar ao ambiente de
+        trabalho: qualidade, trabalho em equipe, experiência e ética.
       </ProfileSinopse>
     </ProfileContainer>
   )
