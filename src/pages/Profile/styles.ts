@@ -63,11 +63,19 @@ export const ProfileContainer = styled.div`
         border-radius: 50%;
         border: 4px solid #9026ff;
 
-        @media (max-height: 900px) {
-          width: 90px;
+        @media (max-height: 1000px) and (max-width: 500px) {
+          width: 80px;
         }
 
-        @media (max-height: 800px) {
+        @media (max-height: 1000px) and (min-width: 500px) {
+          width: 100px;
+        }
+
+        @media (min-width: 1020px) and (max-height: 1020px) {
+          width: 150px;
+        }
+
+        @media (max-height: 700px) {
           width: 70px;
         }
       }
@@ -76,6 +84,11 @@ export const ProfileContainer = styled.div`
         font-family: 'Oswald', sans-serif;
         font-size: 1.4rem;
         margin-top: 15px;
+
+        @media (max-height: 1000px) and (max-width: 500px) {
+          margin-top: 0;
+          font-size: 1.3rem;
+        }
 
         @media (max-height: 900px) {
           margin-top: 5px;
@@ -97,6 +110,10 @@ export const ProfileContainer = styled.div`
         font-size: 17px;
         text-align: center;
         white-space: nowrap;
+
+        @media (max-height: 1000px) and (max-width: 500px) {
+          margin-top: -5px;
+        }
 
         @media (max-height: 900px) {
           margin-bottom: 15px;
@@ -189,7 +206,7 @@ export const ProfileButton = styled.button`
   transition: 0.2s;
 
   .icon {
-    @media (max-width: 600px) {
+    @media (max-height: 700px) {
       width: 20px;
     }
   }
@@ -235,9 +252,14 @@ export const ProfileSinopse = styled.p`
   font-size: 1.5rem;
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.6);
 
-  @media (max-height: 1020px) {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+  @media (max-width: 600px) and (max-height: 750px) {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  @media (max-height: 1020px) and (min-width: 600px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   @media (max-height: 700px) {
@@ -252,5 +274,6 @@ export const ProfileSinopse = styled.p`
   @media (max-width: 768px) {
     width: 85%;
     text-align: justify;
+    line-height: 1.5rem;
   }
 `
