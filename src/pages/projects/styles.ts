@@ -58,9 +58,12 @@ export const ProjectCard = styled.div`
   background-color: #ebebeb;
   border-radius: 8px;
 
+  @media (max-width: 1020px) {
+    flex-direction: column-reverse;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
-    flex-direction: column-reverse;
   }
 
   .project-image {
@@ -68,7 +71,7 @@ export const ProjectCard = styled.div`
     height: auto;
     border-radius: 8px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1020px) {
       width: 100%;
     }
   }
