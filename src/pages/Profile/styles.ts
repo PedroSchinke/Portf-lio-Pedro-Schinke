@@ -59,24 +59,29 @@ export const ProfileContainer = styled.div`
 
       .profile-image {
         width: 150px;
-        height: auto;
+        height: 150px;
         border-radius: 50%;
         border: 4px solid #9026ff;
+        object-fit: cover;
 
         @media (max-height: 1000px) and (max-width: 500px) {
           width: 80px;
+          height: 80px;
         }
 
         @media (max-height: 1000px) and (min-width: 500px) {
           width: 100px;
+          height: 100px;
         }
 
         @media (min-width: 1020px) and (max-height: 1020px) {
           width: 150px;
+          height: 150px;
         }
 
         @media (max-height: 700px) {
           width: 70px;
+          height: 70px;
         }
       }
 

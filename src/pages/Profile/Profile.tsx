@@ -1,5 +1,5 @@
 import { ProfileButton, ProfileContainer, ProfileSinopse } from './styles'
-import ProfileImage from '../../assets/IMG_3125.webp'
+import ProfileImage from '../../assets/Foto Perfil Quadrada.jpg'
 import HTML from '../../assets/HTML5_logo_and_wordmark.svg.webp'
 import CSS from '../../assets/logo-css-3-2048.webp'
 import TS from '../../assets/Typescript_logo_2020.svg.webp'
